@@ -1,7 +1,7 @@
 /*******************************************************************
- * Autonomous Maze Solving EEBot (MC9S12C32)
+ * Autonomous Maze-Solving Robot (MC9S12C32)
  *
- * My firmware for an EEBot that line-follows a maze track, explores
+ * My firmware for a robot that line-follows a maze track, explores
  * unknown branches, backtracks out of dead ends, and retraces the
  * shortest learned path home once it reaches the destination.
  *

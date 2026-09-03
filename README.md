@@ -1,6 +1,6 @@
-# Autonomous Maze Solving EEBot
+# Autonomous Maze-Solving Robot
 
-This is my embedded C firmware for a Freescale/NXP HCS12 (MC9S12C32) EEBot that autonomously navigates and solves a physical line-following maze — exploring unknown branches, backtracking out of dead ends, and retracing the shortest learned path home once it reaches the destination.
+This is my embedded C firmware for a Freescale/NXP HCS12 (MC9S12C32) robot that autonomously navigates and solves a physical line-following maze — exploring unknown branches, backtracking out of dead ends, and retracing the shortest learned path home once it reaches the destination.
 
 ## What it does
 
@@ -13,7 +13,7 @@ This is my embedded C firmware for a Freescale/NXP HCS12 (MC9S12C32) EEBot that 
 ## Hardware target
 
 - MCU: Freescale/NXP MC9S12C32 (HCS12 family)
-- Platform: EEBot line-following/maze robot with LCD, motor drivers, and five analog guider sensors
+- Platform: line-following/maze robot with LCD, motor drivers, and five analog guider sensors
 - Toolchain: CodeWarrior for HC(S)12 (project files included: `.mcp`, `.prm`, simulator configs)
 
 ## Repo layout
