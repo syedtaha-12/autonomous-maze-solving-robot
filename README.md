@@ -23,14 +23,14 @@ Sources/            C source (main.c is the firmware entry point + state machine
 prm/                Linker parameter file (memory map)
 cmd/                Simulator command scripts
 *.ini / *.hwl        CodeWarrior/simulator target configuration
-autonomous_maze_solving_eebot.mcp   CodeWarrior project file
+autonomous_maze_solving_robot.mcp   CodeWarrior project file
 ```
 
 I've gitignored `bin/` (build output) and the CodeWarrior `_Data` cache folder — they get regenerated on build.
 
 ## Building
 
-Open `autonomous_maze_solving_eebot.mcp` in CodeWarrior for HC(S)12, select a build target (simulator or full-chip/hardware), and build. See `Sources/main.c` for my detailed header comment on the firmware's design and the hardware caveats I still need to retune on the physical robot.
+Open `autonomous_maze_solving_robot.mcp` in CodeWarrior for HC(S)12, select a build target (simulator or full-chip/hardware), and build. See `Sources/main.c` for my detailed header comment on the firmware's design and the hardware caveats I still need to retune on the physical robot.
 
 ## About
 

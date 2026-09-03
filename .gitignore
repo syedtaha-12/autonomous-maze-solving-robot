@@ -7,7 +7,7 @@ bin/
 *.map
 
 # CodeWarrior IDE cache/settings (machine-specific)
-autonomous_maze_solving_eebot_Data/
+autonomous_maze_solving_robot_Data/
 
 # Local tooling state
 .claude/
