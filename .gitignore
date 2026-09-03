@@ -1,0 +1,13 @@
+# Build outputs
+bin/
+*.o
+*.abs
+*.abs.phy
+*.abs.s19
+*.map
+
+# CodeWarrior IDE cache/settings (machine-specific)
+autonomous_maze_solving_eebot_Data/
+
+# Local tooling state
+.claude/

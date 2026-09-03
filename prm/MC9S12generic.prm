@@ -1,0 +1,27 @@
+/* Linker parameter file for MC9S12C32.
+ *
+ * My MC9S12C32's RAM is 0x3800-0x3FFF (2K), with code starting at
+ * $4000 - confirmed against the datasheet's memory map and validated
+ * with a real build (chc12.exe / linker.exe from my CodeWarrior
+ * install) that compiled and linked with 0 errors.
+ */
+
+NAMES END
+
+SEGMENTS
+    /* unbanked FLASH ROM - MC9S12C32 has 32K flash, unbanked */
+    ROM_4000 = READ_ONLY  0x4000 TO 0x7FFF;
+    ROM_C000 = READ_ONLY  0xC000 TO 0xFEFF;
+END
+
+PLACEMENT
+    DEFAULT_ROM,_PRESTART, STARTUP,
+    ROM_VAR, STRINGS,
+    NON_BANKED, COPY             INTO  ROM_C000, ROM_4000;
+    /* MC9S12C32 RAM: 0x3800 to 0x3FFF (2K) */
+    DEFAULT_RAM                  INTO  READ_WRITE 0x3800 TO 0x3FFF;
+END
+
+STACKSIZE 0x100
+
+VECTOR ADDRESS 0xFFFE _Startup
